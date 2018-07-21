@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="theme-color" content="#33474d">
-	<title>Mahvish Khan, Historian | PSA Board</title>
-	<link rel="stylesheet" href="/PSA/board/board/css/style.css" />
+	<title>PSA Board</title>
+	<link rel="stylesheet" href="/PSA/board/css/style.css" />
 	
       <link rel="alternate" href="/atom.xml" title="PSA Board" type="application/atom+xml">
     
@@ -38,35 +38,55 @@
 			
 
 		</nav>
-		<h1 class="header__title"><a href="/PSA/board/board/">PSA Board</a></h1>
+		<h1 class="header__title"><a href="/PSA/board/">PSA Board</a></h1>
 		<h2 class="header__subtitle"></h2>
 	</header>
 
 	<main>
-		<article>
+		<h1>Archive</h1>
+
+
+
+
+
+<ul class="archive">
 	
-		<h1>Mahvish Khan, Historian</h1>
 	
-	<div class="article__infos">
-		<br />
+		<li class="archive__year archive__expendable ">
+			<span>2018</span>
+			<ul>
+				
+					<li class="archive__month archive__expendable">
+						<span>May</span>
+						<ul>
+							
+								<li class="archive__entry"><a href="/PSA/board/2018/05/26/Asad-President/">Asad Rahmatullah, President</a></li>
+							
+								<li class="archive__entry"><a href="/PSA/board/2018/05/26/Sanna-Riz/">Sanna Riz, Event Coordinator</a></li>
+							
+								<li class="archive__entry"><a href="/PSA/board/2018/05/26/Anas/">Anas Saeed, Web Developer</a></li>
+							
+								<li class="archive__entry"><a href="/PSA/board/2018/05/26/Mahvish-Khan-Historian/">Mahvish Khan, Historian</a></li>
+							
+						</ul>
+					</li>
+
+				
+			</ul>
+		</li>
 		
-		
-	</div>
-
 	
+</ul>
 
-	
-		<p><figure class="figure"><img src="/PSA-board/images/jinnah.jpg" alt=""></figure></p>
-<p>I am a junior double majoring in Biology and Spanish Studies. After graduation I hope to attend dental school and become and orthodontist because I love making people smile! My hobbies and interests include makeup, playing the clarinet, baking and decorating cakes, and exploring the world around me. In my time at the U, I’ve had the opportunity to get involved in the multicultural community on campus and it is a community of which I am so grateful to be a part! I joined PSA to celebrate my Pakistani heritage and to hopefully learn Urdu (lol). This year I hope to amplify PSA’s presence on campus and share Pakistani culture with a broad range of people!</p>
-
-	
-
-	
-		<span class="different-posts"><a href="/PSA/board/board/2018/05/26/Mahvish-Khan-Historian/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
-
-	
-
-</article>
+<script>
+	const expandables = document.querySelectorAll('.archive__expendable')
+	for(let i = 0; i < expandables.length; i++) {
+		expandables[i].addEventListener('click', (e) => {
+			e.stopPropagation()
+			expandables[i].classList.toggle('archive__expendable_collapsed')
+		})
+	}
+</script>
 
 	</main>
 
